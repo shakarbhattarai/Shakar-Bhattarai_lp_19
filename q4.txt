@@ -1,0 +1,27 @@
+Development Mode: Agile
+	- Small focused teams for individual tasks
+	- Scrum methodology, Day to Day meetings and development discussions
+	- Flexible system requirements
+	- Not much Documentation
+	- Focus on product
+	
+Planning:
+	- Feasibility Study:
+		- Study market and active age groups
+		- Requirement analysis
+		- Survey similar market products
+		- Survey on Paying gateways
+	- Formation of Teams:
+		- Backend Developers:
+			- Database Design
+			- Web development
+			- Security and Firewalls
+			- Server Handling
+		- FrontEnd Developers:
+			- Graphic Designers
+			- Template Designs
+			
+	- Continuous Testing and Integration
+	- Continuous Interaction with client to ensure flexible requirements
+	- Release of Beta version to specific users
+	

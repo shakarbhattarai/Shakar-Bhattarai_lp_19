@@ -1,0 +1,11 @@
+
+Test Scenario: Test to see that user is able to login with valid username and password
+Test Scenario: Test to see that user is not able to login with invalid username and password
+Test Scenario: Test to see that validation message gets displayed in case user leaves username or password field as blank
+Test Scenario: Test to see that validation message is displayed in case user exceeds the character limit of the user name and password fields
+Test Scenario: Test to see that the password is in encrypted form when entered
+Test Scenario: Test to see that there is limit on the total number of unsuccessful attempts
+Test Scenario: Test to see the timeout of the login session
+Test Scenario: Test to see if the password can be copy-pasted
+Test Scenario: Test to see that once logged in, clicking back button doesn't logout user
+Test Scenario: Test to see if XSS vulnerability (JS) on login page
