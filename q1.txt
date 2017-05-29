@@ -1,0 +1,10 @@
+#Since the instruction has asked only for a function that deletes a node from the linkedlist #given only that node, the same has been created
+
+def deleteNode(node):
+	#1. Temporaility store the value of the data of the next node
+	temp=node.next.data
+	#2. Set the data for current node to temp
+	node.data=temp
+	#3. Remove the next node i.e break the connection to the next node and assign it to the next node in the list
+	node.next=node.next.next
+	

@@ -1,0 +1,18 @@
+# If we list all natural numbers below 10 that are multiples of 3 or 5 , the sum is 23
+# Find the sum of all multiples of 3 or 5 below 1000
+#Answer: 233168
+
+
+
+
+#The function takes an integer as an input. All the multiples of 3 or 5 below that number is returned.
+def SumOfMultiples(value):
+	sum=0
+	for j in range(3,value): #1 and 2 are not divisible by 3 or 5, hence start from 3
+		if (j%3==0 or j%5==0): #If divisibe
+			sum=sum+j #Add to sum
+			
+	return sum
+	
+	
+print SumOfMultiples(1000)

@@ -1,0 +1,40 @@
+#Find the largest palindrome made from the product of two 3 digit numbers
+#Program: General: May be used against any number of digits
+#Answer:993*913=906609
+
+def find_palindrome(num_digit):
+	maximum=(10**num_digit-1) # Stores the largest possible num_digit value to start processing
+	maxi=1 # Stores the maximum palidnrome value as a result of multiplication
+	max_a=0 #First multiplier of final result
+	max_b=0	#Second multiplicant of final ressult
+	
+	# Logic: Keep decreasing the second multiplier to get a palindrome number. Save it, and 	reiterate while decereasing 1st multiplier
+
+	
+	while (maximum >= 10**(num_digit-1)):
+		no=maximum-1
+		number=maximum*no
+		
+		while ((not palindrome(str(number))) and no >=10**(num_digit-1)):
+			
+			no=no-1
+			number=maximum*no
+		
+		if number>maxi:
+			max_a=maximum
+			max_b=no
+			maxi=number
+		maximum=maximum-1
+	
+	return max_a,max_b,maxi
+
+def palindrome(number): #Checks if number is palindrome : Recursive approach
+	
+	if len(number)<=1:
+		return True
+	if number[0]==number[-1]:
+		return palindrome(number[1:-1])
+	return False
+	
+	
+print find_palindrome(3)
